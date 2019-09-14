@@ -13,10 +13,10 @@ import java.util.ArrayList;
  */
 public class dbMusicas {
     private static final ArrayList<Musica> MUSICAS = new ArrayList<>();
-    public static ArrayList<Musica> ListAll(){
+    public static ArrayList<Musica> SelectAll(){
         return MUSICAS;
     }
-    public static void Add(Musica musica){
+    public static void Insert(Musica musica){
         MUSICAS.add(musica);
     }
 }

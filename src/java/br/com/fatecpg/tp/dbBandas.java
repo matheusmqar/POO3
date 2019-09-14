@@ -13,10 +13,24 @@ import java.util.ArrayList;
  */
 public class dbBandas{
     private static final ArrayList<Banda> BANDAS = new ArrayList<>();
-    public static ArrayList<Banda> ListAll(){
+    public static ArrayList<Banda> SelectAll(){
         return BANDAS;
     }
-    public static void Add(Banda banda){
+    public static void Insert(Banda banda){
         BANDAS.add(banda);
+        ArrayList<Disco> discos = banda.getDiscos();
+        for(int i = 0; i < discos.size(); i++){
+            dbDiscos.Insert(discos.get(i));
+        }
+        ArrayList<Musica> musicas = banda.getMusicas();
+        for(int i = 0; i < musicas.size(); i++){
+            dbMusicas.Insert(musicas.get(i));
+        }
+    }
+    public static void Update(Banda banda){
+        
+    }
+    public static void Delete(int id){
+        
     }
 }

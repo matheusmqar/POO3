@@ -13,10 +13,10 @@ import java.util.ArrayList;
  */
 public class dbDiscos {
     private static final ArrayList<Disco> DISCOS = new ArrayList<>();
-    public static ArrayList<Disco> ListAll(){
+    public static ArrayList<Disco> SelectAll(){
         return DISCOS;
     }
-    public static void Add(Disco disco){
+    public static void Insert(Disco disco){
         DISCOS.add(disco);
     }
 }
