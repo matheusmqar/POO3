@@ -28,9 +28,9 @@ public class dbBandas{
         }
     }
     public static void Update(Banda banda){
-        
+        BANDAS.set(banda.getId(), banda);
     }
     public static void Delete(int id){
-        
+        BANDAS.remove(id);
     }
 }
