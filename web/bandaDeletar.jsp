@@ -4,6 +4,7 @@
     Author     : marlon.santos
 --%>
 
+<%@page import="br.com.fatecpg.tp.dbBandas"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -18,7 +19,13 @@
         <%@include file="WEB-INF/jspf/header.jspf" %>
         
         <!--Conteúdo principal da página-->
-        
+        <%try{
+            int id = Integer.parseInt(request.getParameter("id"));
+            dbBandas.Delete(id);
+            response.sendRedirect("bandas.jsp");
+        }catch(Exception e){%>
+            <%@include file="WEB-INF/jspf/error.jspf" %>
+        <%}%>
         
         <!--Include para rodapé-->
         <%@include file="WEB-INF/jspf/footer.jspf" %>

@@ -4,3 +4,5 @@
     formatar atraves de Class do Bootstrap, como no link abaixo.
         https://getbootstrap.com/docs/4.0/components/navbar/
 -->
+
+<a href="bandas.jsp">Bandas</a>

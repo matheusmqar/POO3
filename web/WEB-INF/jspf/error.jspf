@@ -1,0 +1,5 @@
+<!-- TODO (Para Fazer)
+    Inserir pagina padrão de Erros.
+    Para pegar os detalhes usar e.getMessage()
+-->
+<p><%=e.getMessage()%></p>

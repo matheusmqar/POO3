@@ -27,8 +27,8 @@
         <div class="container">
             <h2>Lista de Bandas</h2>
             <a href="bandaNovo.jsp" class="btn btn-primary">Nova banda</a>
-            <table class="tab">
-                <thead>
+            <table class="table table-hover mt-2">
+                <thead class="thead-dark">
                     <th scope="col">#</th>
                     <th scope="col">Nome</th>
                     <th scope="col" colspan="2">Ações</th>
@@ -39,9 +39,11 @@
                         <tr>
                             <td><%=banda.getId()+1%></td>
                             <td><%=banda.getName()%></td>
-                            <td><a href="bandaDetalhes.jsp?id=<%=banda.getId()%>">Detalhes</a></td>
-                            <td><a href="bandaEditar.jsp?id=<%=banda.getId()%>">Editar</a></td>
-                            <td><a href="bandaExcluir.jsp?id=<%=banda.getId()%>">Deletar</a></td>
+                            <td>
+                                <a href="bandaDetalhes.jsp?id=<%=banda.getId()%>" class="btn btn-outline-secondary btn-sm">Detalhes</a>
+                                <a href="bandaEditar.jsp?id=<%=banda.getId()%>" class="btn btn-outline-info btn-sm">Editar</a>
+                                <a href="bandaDeletar.jsp?id=<%=banda.getId()%>" class="btn btn-outline-danger btn-sm">Deletar</a>
+                            </td>
                         </tr>
                     <%}%>
                 </tbody>
