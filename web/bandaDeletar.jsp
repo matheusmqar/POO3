@@ -1,6 +1,6 @@
 <%-- 
-    Document   : banda
-    Created on : 14/09/2019, 14:59:38
+    Document   : bandaDeletar
+    Created on : 15/09/2019, 13:50:02
     Author     : marlon.santos
 --%>
 
@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Banda - TP-03</title>
+        <title>Deletar Banda - TP-03</title>
         <!--Include para arquivos CSS-->
         <%@include file="WEB-INF/jspf/bundlecss.jspf" %>
     </head>

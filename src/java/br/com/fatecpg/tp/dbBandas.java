@@ -33,4 +33,10 @@ public class dbBandas{
     public static void Delete(int id){
         BANDAS.remove(id);
     }
+    public static Banda SelectById(int id){
+        return BANDAS.get(id);
+    }
+    public static int getNextId(){
+        return BANDAS.size() > 0 ? BANDAS.size() : 0;
+    }
 }
