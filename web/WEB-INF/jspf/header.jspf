@@ -5,4 +5,13 @@
         https://getbootstrap.com/docs/4.0/components/navbar/
 -->
 
-<a href="bandas.jsp">Bandas</a>
+    <ul class="nav nav-tabs sticky-top bg-light ">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="bandas.jsp">Bandas</a>
+                        <a class="dropdown-item" href="discos.jsp">Discos</a>
+                        <a class="dropdown-item" href="musicas.jsp">Músicas</a>                         
+                    </div>
+            </li>    
+    </ul>

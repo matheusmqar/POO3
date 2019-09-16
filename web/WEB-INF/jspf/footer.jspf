@@ -4,3 +4,6 @@
     formatar atraves de Class do Bootstrap, como no link abaixo.
         https://getbootstrap.com/docs/4.0/utilities/colors/#background-color
 -->
+<nav class="navbar fixed-bottom navbar-light bg-dark">
+  <a class="navbar-brand" href="#">Retornar ao topo</a>
+</nav>

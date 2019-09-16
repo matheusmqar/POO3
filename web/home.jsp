@@ -1,7 +1,7 @@
 <%-- 
     Document   : home.jsp
     Created on : 14/09/2019, 11:00:03
-    Author     : marlon.santos
+    Author     : Orlando
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -18,8 +18,7 @@
         <%@include file="WEB-INF/jspf/header.jspf" %>
         
         <!--Conteúdo principal da página-->
-        
-        
+        <!-- EM CONSTRUÇÃO-->
         <!--Include para rodapé-->
         <%@include file="WEB-INF/jspf/footer.jspf" %>
         <!--Include para arquivos CSS-->
