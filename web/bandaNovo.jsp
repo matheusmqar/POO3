@@ -25,7 +25,7 @@
                 int id = dbBandas.getNextId();
                 String nome = request.getParameter("name");
                 dbBandas.Insert(new Banda(id, nome));
-                response.sendRedirect("bandas.jsp");
+                response.sendRedirect("musicas.jsp");
             } else {
         %>
                 <div class="container">
