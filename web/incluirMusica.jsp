@@ -40,7 +40,7 @@
                             %>
                         </div>
                         <a href="musicas.jsp" class="btn btn-danger">Cancelar</a>
-                        <input type="submit" name="salvar" value="Salvar" class="btn btn-success" />
+                        <a href="musicas.jsp"><input type="submit" name="salvar" value="Salvar" class="btn btn-success" /></a>
                     </form>
                 </div>
         <%
@@ -53,6 +53,6 @@
         <%@include file="WEB-INF/jspf/footer.jspf" %>
         <!--Include para arquivos CSS-->
         <%@include file="WEB-INF/jspf/bundlejs.jspf" %>
-    </body>[
+    </body>
 </html>
 

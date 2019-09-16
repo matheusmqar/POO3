@@ -26,7 +26,7 @@
         %>
         <div class="container">
             <h2>Lista de Musicas</h2>
-            <a href="musicaNovo.jsp" class="btn btn-primary">Nova musica</a>
+            <a href="incluirMusica.jsp" class="btn btn-primary">Nova musica</a>
             <table class="table table-hover mt-2">
                 <thead class="thead-dark">
                     <th scope="col">#</th>
@@ -37,12 +37,12 @@
                     <%for(int i = 0; i < musicas.size(); i++){
                         Musica musica = musicas.get(i);%>
                         <tr>
+                          
                             <td><%=musica.getId()+1%></td>
                             <td><%=musica.getName()%></td>
                             <td>
-                                <a href="musicaDetalhes.jsp?id=<%=musica.getId()%>" class="btn btn-outline-secondary btn-sm">Detalhes</a>
-                                <a href="musicaEditar.jsp?id=<%=musica.getId()%>" class="btn btn-outline-info btn-sm">Editar</a>
-                                <a href="musicaDeletar.jsp?id=<%=musica.getId()%>" class="btn btn-outline-danger btn-sm">Deletar</a>
+                                <a href="alterarMusica.jsp?id=<%=musica.getId()%>" class="btn btn-outline-info btn-sm">Editar</a>
+                                <a href="excluirMusica.jsp?id=<%=musica.getId()%>" class="btn btn-outline-danger btn-sm">Deletar</a>
                             </td>
                         </tr>
                     <%}%>

@@ -9,6 +9,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="index.jsp">Index</a>
                         <a class="dropdown-item" href="bandas.jsp">Bandas</a>
                         <a class="dropdown-item" href="discos.jsp">Discos</a>
                         <a class="dropdown-item" href="musicas.jsp">Músicas</a>                         

@@ -12,13 +12,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+       <%@include file="WEB-INF/jspf/bundlecss.jspf" %>
+
     </head>
     <body>
+       <%@include file="WEB-INF/jspf/header.jspf" %>
+       
        <%try { %>
        <% int index = Integer.parseInt(request.getParameter("index"));%>
        <% Disco disco = dbDiscos.getDisco().get(index); %>
+       <div class="container">
        <form>
-           Índice:<br/>
+           <br/>
+           Índice: 
            <%= index %><br/>
            <input type="hidden" name="index" value="<%=index%>"/>
            Nome: <br/>
@@ -28,13 +34,14 @@
            Ano de Lançamento: <br/>
            <input type="text" name="ano" value="<%=disco.getAno()%>"/><br/><br/>
            
-           <input type="submit" name="cancelar" value="Cancelar"/>
-           <input type="submit" name="set" value="Alterar"/>
+           <input type="submit" name="cancelar" value="Cancelar" class="btn btn-danger"/>
+           <input type="submit" name="set" value="Alterar" class="btn btn-success"/>
            
        </form>
+       </div>
       <% 
             if(request.getParameter("cancelar")!=null){
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("discos.jsp");
             }
             if (request.getParameter("set") != null){
             String nome = request.getParameter("nome");
@@ -47,5 +54,8 @@
        <%} catch (Exception e) {%>
        <h1>Erro no processamento de dados</h1>
        <%}%>
+       
+        <%@include file="WEB-INF/jspf/footer.jspf" %>
+        <%@include file="WEB-INF/jspf/bundlejs.jspf" %>
     </body>
 </html>

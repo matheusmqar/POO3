@@ -19,16 +19,17 @@
         <%@include file="WEB-INF/jspf/header.jspf" %>
         
         <!--Conteúdo principal da página-->
-        
-        <a href="incluirDisco.jsp">Incluir Disco</a>
-        
-        <table border="1">
-            <tr>
+          <div class="container">
+            <h2>Lista de Discos</h2>
+        <a href="incluirDisco.jsp" class="btn btn-primary">Incluir Disco</a>
+
+        <table class="table table-hover mt-2">
+                <thead class="thead-dark">
                 <th>Índice</th>    
                 <th>Nome</th>
                 <th>Artista</th>
                 <th>Ano de Lançamento</th>
-            </tr>
+                </thead>
             
             <% for (Disco disco : dbDiscos.getDisco()) { %>
             <tr>
@@ -43,7 +44,7 @@
             </tr>
             <%}%>
         </table>
-        
+          </div>
         <!--Include para rodapé-->
         <%@include file="WEB-INF/jspf/footer.jspf" %>
         <!--Include para arquivos CSS-->
