@@ -18,5 +18,22 @@ public class dbMusicas {
     }
     public static void Insert(Musica musica){
         MUSICAS.add(musica);
+        ArrayList<Musica> musicas = musica.getMusicas();
+        for(int i = 0; i < musicas.size(); i++){
+            dbMusicas.Insert(musicas.get(i));
+        }
+    }
+    
+    public static void Update(Musica musica){
+        MUSICAS.set(musica.getId(), musica);
+    }
+    public static void Delete(int id){
+        MUSICAS.remove(id);
+    }
+    public static Musica SelectById(int id){
+        return MUSICAS.get(id);
+    }
+    public static int getNextId(){
+        return MUSICAS.size() > 0 ? MUSICAS.size() : 0;
     }
 }
