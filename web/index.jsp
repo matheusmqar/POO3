@@ -19,8 +19,7 @@
         
         <!--Conteúdo principal da página-->
         <div class="card mb-3 text-center">
-            <img class="card-img-top" src="res/img/JoJo.jpg" style=" 
-                max-width: 100rem; padding-bottom: 10px; padding-top: 15px;" alt="Imagem de capa do card">
+
             <div class="card-body">
               <h5 class="card-title">TP-03:GRUPO 1</h5>
               <p class="card-text">A aplicação a seguir tem o objetivo de 
@@ -28,7 +27,7 @@
               devs abaixo:  </p>
             </div>
         </div>
-        <hr/>
+        <hr/> 
         <div class="card-group">
             <div class="card">
                 <img class="card-img-top" src="res/img/marlon.jpg"  style="max-width: 18rem;" alt="Imagem de capa do card">
