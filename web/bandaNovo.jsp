@@ -25,7 +25,7 @@
                 int id = dbBandas.getNextId();
                 String nome = request.getParameter("name");
                 dbBandas.Insert(new Banda(id, nome));
-                response.sendRedirect("musicas.jsp");
+                response.sendRedirect("index.jsp");
             } else {
         %>
                 <div class="container">
@@ -53,5 +53,5 @@
         <%@include file="WEB-INF/jspf/footer.jspf" %>
         <!--Include para arquivos CSS-->
         <%@include file="WEB-INF/jspf/bundlejs.jspf" %>
-    </body>[
+    </body>
 </html>

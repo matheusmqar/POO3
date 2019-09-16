@@ -20,7 +20,7 @@ public class dbBandas{
         BANDAS.add(banda);
         ArrayList<Disco> discos = banda.getDiscos();
         for(int i = 0; i < discos.size(); i++){
-            dbDiscos.Insert(discos.get(i));
+           // dbDiscos.Insert(discos.get(i));
         }
         ArrayList<Musica> musicas = banda.getMusicas();
         for(int i = 0; i < musicas.size(); i++){
@@ -28,7 +28,7 @@ public class dbBandas{
         }
     }
     public static void Update(Banda banda){
-        BANDAS.set(banda.getId(), banda);
+      //  BANDAS.set(banda.getId(), banda);
     }
     public static void Delete(int id){
         BANDAS.remove(id);

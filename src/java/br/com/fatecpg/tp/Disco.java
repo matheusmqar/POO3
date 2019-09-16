@@ -9,10 +9,40 @@ package br.com.fatecpg.tp;
  *
  * @author marlon.santos
  */
-public class Disco extends SuperClass{
+public class Disco {
+    private String nome;
+    private String artista;
+    private int ano;
     
-    public Disco(int id, String name) {
-        super(id, name);
+    public Disco(String nome, String artista, int ano) {
+        this.ano = ano;
+        this.nome = nome;
+        this.artista = artista;
+}
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getArtista() {
+        return artista;
+    }
+
+    public void setArtista(String artista) {
+        this.artista = artista;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
     }
     
 }
+

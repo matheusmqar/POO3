@@ -11,11 +11,10 @@ import java.util.ArrayList;
  *
  * @author marlon.santos
  */
-public class Banda extends SuperClass{
+public class Banda{
     private ArrayList<Disco> discos;
     private ArrayList<Musica> musicas;
     public Banda(int id, String name) {
-        super(id, name);
         this.discos = new ArrayList<>();
         this.musicas = new ArrayList<>();
     }

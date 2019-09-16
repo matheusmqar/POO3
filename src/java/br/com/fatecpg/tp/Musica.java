@@ -9,10 +9,10 @@ package br.com.fatecpg.tp;
  *
  * @author marlon.santos
  */
-public class Musica extends SuperClass{
+public class Musica{
     
     public Musica(int id, String name) {
-        super(id, name);
+      
     }
     
 }
